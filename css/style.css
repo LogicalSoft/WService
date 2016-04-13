@@ -1,0 +1,213 @@
+*{
+	color      : #fff;
+	font-size  : 12px;
+	box-sizing : border-box;
+}
+
+html,body{
+	width       : 100%;
+	height      : 100%;
+	margin      : 0px;
+	padding     : 0px;
+	overflow    : hidden;
+	font-family : arial;
+}
+
+
+
+#content_ws{
+	height: 100%;
+	overflow : hidden;
+	background-color : #222;
+}
+
+.bodyWs{
+	float  : left;
+	width  : 100%;
+	height : calc(100% - 35px);
+}
+
+
+/* MENU LEFT */
+.aside{
+	float : left;
+	width : 325px;
+	overflow : auto;
+}
+
+form{ padding: 0 10px; }
+
+.contenedor_form, #responseTabla, #responseArray{ height: calc(100% - 35px); }
+.aside, .response{ height: 100%; }
+
+/* MENU RIGHT */
+.response{
+	float  : left;
+	height : 100%;
+	width  : calc(100% - 325px);
+	border-left : 1px solid #FFF;
+}
+
+/* TITLE BAR */
+.divTitle{
+	overflow : hidden;
+}
+
+	.title{
+		float   : left;
+		width   : 100%;
+		height  : 35px;
+		padding : 10px;
+		text-align    : center;
+		border-bottom : 1px solid #FFF;
+	}
+
+	.btnClose{
+		width       : 40px;
+		height      : 20px;
+		float       : left;
+		margin-top  : 5px;
+		text-align  : center;
+		font-size   : 10px;
+	}
+
+	.btnClose:hover{
+		color : red;
+		border-color : red !important;
+	}
+
+	.btnClose:active{
+		color : red;
+	}
+
+	.divTitle div:nth-child(2){ margin-left : -45px; }
+	.divTitle div:nth-child(3){ margin-left : -90px; }
+	.divTitle div:nth-child(4){ margin-left : -135px; }
+
+input, textarea{
+	padding : 5px;
+	border  : none;
+	color   : #2900FF;
+}
+
+.filaVar, .campoTop{
+	overflow : hidden;
+	margin   : 5px 0;
+}
+
+.filaVar > div, .filaVar input, .campoTop > div, .campoTop input{ float:left; }
+
+.filaVar div:nth-child(1){ width : 50px; }
+.filaVar div:nth-child(2){ width : 100px; }
+.filaVar div:nth-child(3){ width : 130px; }
+
+pre, code{
+	margin  : 0px;
+	padding : 0px;
+	height  : 100%;
+}
+
+.tablaXml{
+	margin : auto !important;
+	border : 1px solid #fff;
+	border-collapse : collapse;
+}
+
+	thead{
+		background-color : #000;
+		text-align       : center;
+		border           : 1px solid #000;
+	}
+
+		.tablaXml thead td{
+			padding   : 5px;
+			font-size : 13px !important;
+		}
+
+	.tablaXml tbody td{
+		padding    : 10px;
+		font-size  : 11px;
+		background : #fff;
+		color      : #000 !important;
+	}
+
+
+
+#responseTabla, #responseArray, .contenedor_form{
+	margin   : 0;
+	width    : 100%;
+	overflow : hidden;
+}
+
+.contenedor_form{ padding : 10px 0; }
+
+#responseTabla, #responseArray{
+	padding : 10px;
+	background-color : #282B2E;
+}
+
+#responseArray > *{
+	margin : 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.btnFila{
+	width  : 25px;
+	height : 25px;
+	font-size : 20px;
+	font-weight : bold;
+	padding-top : 2px;
+	text-align  : center;
+	background-color : #999;
+}
+
+#divXml, #divPhp{
+	width    : 100%;
+	height   : 100%;
+	display  : none;
+	position : absolute;
+	background-color : #222;
+}
+
+input{ width: 100%; }
+
+input[type=button]{
+	cursor      : pointer;
+	padding     : 5px 0;
+	font-weight : bold;
+}
+
+.divTitle input{ font-size: 10px; }
+
+input[type=button]:hover{
+	color: red;
+}
+
+.actionTable{
+	float: left;
+	width: 24px;
+	background-color: #000;
+}
+.actionTable a div{ background-image: url(../img/xls.png); }
+
+.actionTable div{
+	margin: 5px 2px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/xls.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.actionTable div[data-edit=false]{ background-image: url(../img/edit_off.png); }
+.actionTable div[data-edit=true]{ background-image: url(../img/edit_on.png); }
+
+.parentTable{
+	float:left;
+	overflow :  auto;
+	margin   : 0;
+	width    : calc(100% - 24px);
+	height   : 100%;
+}
+

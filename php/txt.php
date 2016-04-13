@@ -1,4 +1,8 @@
 <?php
+	/**
+	* @author Jhon Erick Marroquin Cardenas <jhon3rick@gmail.com> <twitter @jhon3rick>
+	* @license MIT
+	*/
 
 	$datos = '';
 	foreach ($objData as $key => $value) { $datos .= "\n\t\t\t'$key' => '$value',"; }
